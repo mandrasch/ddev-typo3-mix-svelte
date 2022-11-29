@@ -1,0 +1,26 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "Made by MK & myself.",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx mix watch",
+    "build": "npx mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandrasch/ddev-typo3-mix-svelte.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandrasch/ddev-typo3-mix-svelte/issues"
+  },
+  "homepage": "https://github.com/mandrasch/ddev-typo3-mix-svelte#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "laravel-mix-svelte": "^0.5.0"
+  }
+}
