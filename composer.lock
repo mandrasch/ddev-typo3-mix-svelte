@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4175c50cd7c5e1b75f54f994785d17ee",
+    "content-hash": "aec5b7e6595c708259df68631cceaea9",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1159,6 +1159,50 @@
                 }
             ],
             "time": "2022-10-26T14:07:24+00:00"
+        },
+        {
+            "name": "kean/svelte-demo",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/svelte-demo",
+                "reference": "0131d31e02bee3f03efcb15bd70e334d77b01dd5"
+            },
+            "require": {
+                "typo3/cms-core": "^12.0"
+            },
+            "replace": {
+                "typo3-ter/svelte-demo": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".Build/public",
+                    "extension-key": "svelte_demo"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KeAn\\SvelteDemo\\": "Classes"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Ketterer",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Matthias Andrasch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Demo project for svelte integration into TYPO3",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lolli42/finediff",
@@ -6307,7 +6351,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "kean/svelte-demo": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

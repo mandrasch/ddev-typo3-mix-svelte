@@ -14,6 +14,7 @@
 		"sort-packages": true
 	},
 	"require": {
+		"kean/svelte-demo": "@dev",
 		"typo3/cms-backend": "^12.0",
 		"typo3/cms-belog": "^12.0",
 		"typo3/cms-beuser": "^12.0",
@@ -44,5 +45,11 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
+	},
+	"repositories": {
+		"local": {
+			"type": "path",
+			"url": "packages/*"
+		}
 	}
 }

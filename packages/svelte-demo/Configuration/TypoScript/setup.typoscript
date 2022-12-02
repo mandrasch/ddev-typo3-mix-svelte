@@ -1,0 +1,88 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
+
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+    typeNum = 0
+
+    10 = FLUIDTEMPLATE
+    10 {
+        templateRootPaths {
+            0 = EXT:svelte_demo/Resources/Private/Templates/Page/
+            1 = {$page.fluidtemplate.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:svelte_demo/Resources/Private/Partials/Page/
+            1 = {$page.fluidtemplate.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:svelte_demo/Resources/Private/Layouts/Page/
+            1 = {$page.fluidtemplate.layoutRootPath}
+        }
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = media
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                levels = 2
+                includeSpacer = 1
+                as = mainnavigation
+            }
+        }
+    }
+
+    meta {
+        viewport = {$page.meta.viewport}
+        robots = {$page.meta.robots}
+        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+        
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        }
+    }
+}
+
+
+################
+#### CONFIG ####
+################
+config {
+    absRefPrefix = auto
+    no_cache = {$config.no_cache}
+    uniqueLinkVars = 1
+    pageTitleFirst = 1
+    linkVars = L
+    prefixLocalAnchors = {$config.prefixLocalAnchors}
+    renderCharset = utf-8
+    metaCharset = utf-8
+    doctype = html5
+    removeDefaultJS = {$config.removeDefaultJS}
+    inlineStyle2TempFile = 1
+    admPanel = {$config.admPanel}
+    debug = 0
+    cache_period = 86400
+    sendCacheHeaders = {$config.sendCacheHeaders}
+    intTarget =
+    extTarget =
+    disablePrefixComment = 1
+    index_enable = 1
+    index_externals = 1
+    index_metatags = 1
+
+    // Disable Image Upscaling
+    noScaleUp = 1
+
+    // Compression and Concatenation of CSS and JS Files
+    compressJs = 0
+    compressCss = 0
+    concatenateJs = 0
+    concatenateCss = 0
+}
