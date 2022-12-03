@@ -12,5 +12,4 @@ nbproject
 !/public/typo3conf/AdditionalConfiguration.php
 
 /node_modules
-
-# Compiled JS/SCSS files: 
+mix-manifest.json
