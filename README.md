@@ -1,6 +1,6 @@
-Made by MK & myself.
+Demo repo by @maketterer and myself. Heavily inspired by work of @fgeierst, e.g. [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo) and [fgeierst/typo3-11-tailwind-demo](https://github.com/fgeierst/typo3-11-tailwind-demo).
 
-## Local setup
+## Local setup after git clone:
 
 ```
 ddev start
@@ -29,5 +29,4 @@ ddev npm install
 TODO:
 - [ ] add https://github.com/drud/ddev-browsersync (HTTPS version)
 - [ ] add JS code snippet browsersync https://gist.github.com/mandrasch/43c2720da7f7672069a10acb27b3beb3
-
 - [ ] How to add example / simple theme / svelte component?
