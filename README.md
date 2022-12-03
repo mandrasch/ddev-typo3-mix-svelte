@@ -39,8 +39,11 @@ ddev npm install
 - `ddev get drud/ddev-browsersync`
 
 
-TODO:
+## TODOs
+
 - [ ] add https://github.com/drud/ddev-browsersync (HTTPS version)
 - [ ] add JS code snippet browsersync https://gist.github.com/mandrasch/43c2720da7f7672069a10acb27b3beb3
 - [ ] How to add example / simple theme / svelte component?
-- [ ] Create vite demo (https://github.com/fgeierst/typo3-vite-demo)
+- [ ] Create vite demo (https://github.com/fgeierst/typo3-vite-demo) in another repo
+- [ ] Add gitpod support
+- [ ] Provide demo site via hetzner + ploi.io
