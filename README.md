@@ -7,7 +7,7 @@ Demo repo for Svelte usage in typo3 with help of ...
 - [LaravelMix](https://laravel-mix.com/)
 - [laravel-mix-svelte](https://laravel-mix.com/extensions/svelte)
 
-Created by [@maketterer](https://github.com/maketterer) and [mandrasch](https://github.com/mandrasch).
+Created by [@maketterer](https://github.com/maketterer) and [@mandrasch](https://github.com/mandrasch).
 
 Heavily inspired by work of [@fgeierst](https://gitgub.com/fgeierst), e.g. [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo) and [fgeierst/typo3-11-tailwind-demo](https://github.com/fgeierst/typo3-11-tailwind-demo).
 
