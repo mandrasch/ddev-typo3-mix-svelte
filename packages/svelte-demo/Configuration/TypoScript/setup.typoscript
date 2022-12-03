@@ -42,11 +42,16 @@ page {
         viewport = {$page.meta.viewport}
         robots = {$page.meta.robots}
         apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
-        
+
         X-UA-Compatible = {$page.meta.compatible}
         X-UA-Compatible {
             attribute = http-equiv
         }
+    }
+
+    // https://t3planet.de/blog/add-css-js-typo3/
+    includeJSFooter {
+      svelte-demo = EXT:svelte-demo/Resources/Public/CompiledJavaScript/main.js
     }
 }
 
@@ -81,8 +86,40 @@ config {
     noScaleUp = 1
 
     // Compression and Concatenation of CSS and JS Files
-    compressJs = 0
-    compressCss = 0
-    concatenateJs = 0
-    concatenateCss = 0
+    // compressJs = 0
+    // compressCss = 0
+    // concatenateJs = 0
+    // concatenateCss = 0
+
 }
+
+
+####################################################
+#       Local development configuration            #
+####################################################
+
+// https://stackoverflow.com/a/53431136
+[applicationContext matches "#^Development/Local#"]
+
+    // You could also include this as separate file
+    // <INCLUDE_TYPOSCRIPT: source="FILE:EXT:.../development.typoscript">
+
+    // Compression and concatenation of CSS and JS Files
+    config {
+        compressCss = 0
+        concatenateCss = 0
+        compressJs = 0
+        concatenateJs = 0
+        no_cache = 1
+    }
+
+    // Add browsersync snippet, only needed for local development
+    // (https://laravel-mix.com/docs/6.0/browsersync)
+    page{
+      jsFooterInline {
+          1664802176 = TEXT
+          1664802176.value = document.write("<script async src='https://HOST:3000/browser-sync/browser-sync-client.js'></script>".replace("HOST", location.hostname));
+      }
+    }
+
+[/applicationContext]
