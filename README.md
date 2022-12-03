@@ -9,9 +9,19 @@ Demo repo for Svelte usage in typo3 with help of ...
 
 Created by [@maketterer](https://github.com/maketterer) and [@mandrasch](https://github.com/mandrasch).
 
-Heavily inspired by work of [@fgeierst](https://gitgub.com/fgeierst), e.g. [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo) and [fgeierst/typo3-11-tailwind-demo](https://github.com/fgeierst/typo3-11-tailwind-demo).
+Heavily inspired by work of [@fgeierst](https://gitgub.com/fgeierst), e.g. [Island Architecture gist](https://gist.github.com/fgeierst/4a36e80e9086ce5312e1c99a069bd41d), [fgeierst/typo3-vite-demo](https://github.com/fgeierst/typo3-vite-demo), [fgeierst/typo3-11-tailwind-demo](https://github.com/fgeierst/typo3-11-tailwind-demo).
+
+
+## Local development
+
+- `ddev npm run dev` (watches for changes)
+- `ddev launch`
+
+You should see `BrowserSync connected in the upper right corner` while developing.
 
 ## Local setup after git clone:
+
+This needs to be setup once:
 
 ```
 ddev start
@@ -20,13 +30,10 @@ ddev composer install
 ddev exec touch public/FIRST_INSTALL
 ddev launch
 # Install typo3, then:
-
 ddev npm install
 ```
 
-## Local development
 
-- `ddev npm run dev`
 
 ## How was this created?
 
@@ -36,8 +43,15 @@ ddev npm install
 - `ddev npm i laravel-mix-svelte --save-dev`
 - Added scripts section to package.json
 - Create `webpack.mix.js`
-- `ddev get drud/ddev-browsersync`
+- Install support for browsersync via `ddev get drud/ddev-browsersync`
+- `ddev npm install --save svelte-confetti`
 
+- Created extension `svelte-demo` for typo3
+
+
+## Feedback
+
+Happy to receive feedback or suggestions!
 
 ## TODOs
 
