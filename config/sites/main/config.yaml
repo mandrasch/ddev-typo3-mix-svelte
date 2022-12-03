@@ -1,4 +1,4 @@
-base: "https://ddev-typo3-mix-svelte.ddev.site/"
+base: "https://live-site.example.com/"
 # https://t3planet.de/blog/typo3-context/
 baseVariants:
   - base: "https://ddev-typo3-mix-svelte.ddev.site/"
