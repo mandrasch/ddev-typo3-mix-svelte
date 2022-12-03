@@ -30,12 +30,14 @@ ddev npm install
 
 ## How was this created?
 
-- Followed https://ddev.readthedocs.io/en/latest/users/quickstart/#typo3
+- Followed steps of [DDEV typo3 quickstart docs](https://ddev.readthedocs.io/en/latest/users/quickstart/#typo3)
 - `ddev npm init -y`
 - `ddev npm install laravel-mix --save-dev`
 - `ddev npm i laravel-mix-svelte --save-dev`
-- Added scripts to package.json
+- Added scripts section to package.json
 - Create `webpack.mix.js`
+- `ddev get drud/ddev-browsersync`
+
 
 TODO:
 - [ ] add https://github.com/drud/ddev-browsersync (HTTPS version)
