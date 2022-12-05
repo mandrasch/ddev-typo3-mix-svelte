@@ -115,11 +115,9 @@ config {
 
     // Add browsersync snippet, only needed for local development
     // (https://laravel-mix.com/docs/6.0/browsersync)
-    page{
-      jsFooterInline {
+    page.jsFooterInline {
           1664802176 = TEXT
           1664802176.value = document.write("<script async src='https://HOST:3000/browser-sync/browser-sync-client.js'></script>".replace("HOST", location.hostname));
       }
-    }
 
 [/applicationContext]
