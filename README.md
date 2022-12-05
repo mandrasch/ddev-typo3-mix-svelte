@@ -25,14 +25,21 @@ This needs to be setup once:
 
 ```
 ddev start
-ddev composer install
-#TODO: this?
-ddev exec touch public/FIRST_INSTALL
+
+# Install composer and NodeJS packages
+ddev composer install && ddev npm install
+
+# Import database from demo snapshot dump
+# (Otherwise you could use: 'ddev exec touch public/FIRST_INSTALL')
+ddev snapshot restore --latest
+
 ddev launch
-# Install typo3, then:
-ddev npm install
 ```
 
+Login via ddev-typo3-mix-svelte.ddev.site/typo3 using these credentials:
+
+Demo user: ``
+Demo password: ``
 
 
 ## How was this created?
@@ -55,9 +62,10 @@ Happy to receive feedback or suggestions!
 
 ## TODOs
 
-- [ ] add https://github.com/drud/ddev-browsersync (HTTPS version)
-- [ ] add JS code snippet browsersync https://gist.github.com/mandrasch/43c2720da7f7672069a10acb27b3beb3
+- [x] add https://github.com/drud/ddev-browsersync (HTTPS version)
+- [x] add JS code snippet browsersync https://gist.github.com/mandrasch/43c2720da7f7672069a10acb27b3beb3
 - [ ] How to add example / simple theme / svelte component?
+- [ ] Transmit javascript property vars from template
 - [ ] Create vite demo (https://github.com/fgeierst/typo3-vite-demo) in another repo
 - [ ] Add gitpod support
-- [ ] Provide demo site via hetzner + ploi.io
+- [ ] Provide demo site via hetzner + ploi.io (live demo)?
