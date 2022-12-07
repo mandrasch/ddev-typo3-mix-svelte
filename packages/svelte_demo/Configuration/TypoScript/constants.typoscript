@@ -1,0 +1,10 @@
+##############
+### CONFIG ###
+##############
+config {
+    no_cache = 0
+    removeDefaultJS = 0
+    admPanel = 1
+    prefixLocalAnchors = all
+    sendCacheHeaders = 1
+}

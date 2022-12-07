@@ -1,0 +1,30 @@
+page = PAGE
+page.10 < styles.content.get
+
+####################################################
+#       Local development configuration            #
+####################################################
+
+// https://stackoverflow.com/a/53431136
+[applicationContext matches "#^Development/Local#"]
+
+    // You could also include this as separate file
+    // <INCLUDE_TYPOSCRIPT: source="FILE:EXT:.../development.typoscript">
+
+    // Compression and concatenation of CSS and JS Files
+    config {
+        compressCss = 0
+        concatenateCss = 0
+        compressJs = 0
+        concatenateJs = 0
+        no_cache = 1
+    }
+
+    // Add browsersync snippet, only needed for local development
+    // (https://laravel-mix.com/docs/6.0/browsersync)
+    page.jsFooterInline {
+          1664802176 = TEXT
+          1664802176.value = document.write("<script async src='https://HOST:3000/browser-sync/browser-sync-client.js'></script>".replace("HOST", location.hostname));
+      }
+
+[/applicationContext]
