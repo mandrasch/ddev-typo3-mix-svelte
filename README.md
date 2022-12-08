@@ -65,16 +65,27 @@ Demo password:  `password`
 
 ## How was this created?
 
-- Followed steps of [DDEV typo3 quickstart docs](https://ddev.readthedocs.io/en/latest/users/quickstart/#typo3)
+- Followed steps of [DDEV typo3 quickstart docs](https://ddev.readthedocs.io/en/latest/users/quickstart/#typo3), but used v11:
+- `ddev config --project-type=typo3 --docroot=public --create-docroot --php-version 8.1`
+- `ddev composer create "typo3/cms-base-distribution:^11" --prefer-dist`
+- `ddev exec touch public/FIRST_INSTALL`
+- Finish install in browser (db-user: db, db-pass: db, host: db)
+
 - `ddev npm init -y`
 - `ddev npm install laravel-mix --save-dev`
 - `ddev npm i laravel-mix-svelte --save-dev`
 - Added scripts section to package.json
 - Create `webpack.mix.js`
-- Install support for browsersync via `ddev get drud/ddev-browsersync`
-- `ddev npm install --save svelte-confetti`
+- Install support for browsersync via `ddev get drud/ddev-browsersync`, `ddev restart` is required afterwards
+
 - Created extension `svelte-demo` for typo3
 - Added root site, added template for root site, include svelte-demo
+
+![Screenshot edit whole template record, tab includes, add svelte-demo](.gh-screenshots/screenshot_include_static.png?raw=true)
+
+Finally created an HTML block:
+
+- TODO: Add screenshot for HTML block
 
 ## Feedback
 
