@@ -4,6 +4,8 @@ LaravelMix + Svelte + typo3 🧡
 
 Status: Work in Progress. 🧑‍🔧
 
+![Screenshot block with svelte input binding](.gh-screenshots/teaser.png?raw=true)
+
 Demo repo for Svelte usage in typo3 v11.5 with help of ...
 
 - [DDEV](https://github.com/drud/ddev)
