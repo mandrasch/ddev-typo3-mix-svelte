@@ -37,8 +37,8 @@ ddev launch
 
 Login via ddev-typo3-mix-svelte.ddev.site/typo3 using these credentials:
 
-Demo user: ``
-Demo password: ``
+Demo user: `admin`
+Demo password: `password`
 
 
 ## How was this created?
