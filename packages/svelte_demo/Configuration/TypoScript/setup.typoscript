@@ -1,15 +1,20 @@
 page = PAGE
 page.10 < styles.content.get
 
+page{
+    includeJSFooter {
+      svelte-demo-main = EXT:svelte_demo/Resources/Public/CompiledJavaScript/main.js
+    }
+}
+
 ####################################################
 #       Local development configuration            #
 ####################################################
 
-// https://stackoverflow.com/a/53431136
-[applicationContext matches "#^Development/Local#"]
+// For more sophisticaed matching, see https://stackoverflow.com/a/53431136
+# [applicationContext matches "#^Development/Local#"]
 
-    // You could also include this as separate file
-    // <INCLUDE_TYPOSCRIPT: source="FILE:EXT:.../development.typoscript">
+[applicationContext == "Development/Local"]
 
     // Compression and concatenation of CSS and JS Files
     config {

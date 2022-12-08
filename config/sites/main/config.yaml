@@ -1,8 +1,4 @@
-base: "https://live-site.example.com/"
-# https://t3planet.de/blog/typo3-context/
-baseVariants:
-  - base: "https://ddev-typo3-mix-svelte.ddev.site/"
-    condition: 'applicationContext == "Development/Local"'
+base: "https://ddev-typo3-mix-svelte.ddev.site/"
 errorHandling: {}
 languages:
   - title: English

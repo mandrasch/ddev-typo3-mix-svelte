@@ -2,6 +2,8 @@
 
 LaravelMix + Svelte + typo3 🧡
 
+Status: Work in Progress. 🧑‍🔧
+
 Demo repo for Svelte usage in typo3 v11.5 with help of ...
 
 - [DDEV](https://github.com/drud/ddev)
@@ -29,6 +31,9 @@ ddev start
 
 # Install composer and NodeJS packages
 ddev composer install && ddev npm install
+
+# Setup .env file
+ddev exec 'cp .env.example .env' && \
 
 # Import database from demo db snapshot
 # (Otherwise you could use: 'ddev exec touch public/FIRST_INSTALL')
@@ -65,3 +70,8 @@ Looking for vite? https://github.com/mandrasch/ddev-typo3-vite-svelte <br>
 Looking for WordPress? https://github.com/mandrasch/ddev-wp-acf-blocks-svelte
 
 See more experiments on https://my-ddev-lab.mandrasch.eu/.
+
+## TODOs
+
+- [ ] Add gitpod support? (https://github.com/fgeierst/typo3-vite-demo)
+- [ ] Add support for `<style lang="scss">`

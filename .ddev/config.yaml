@@ -17,8 +17,7 @@ use_dns_when_possible: true
 composer_version: "2"
 # https://stackoverflow.com/a/67901820
 # TODO: check with mk
-web_environment:
-  - TYPO3_CONTEXT=Development/Local
+web_environment: []
 nodejs_version: "16"
 # Key features of ddev's config.yaml:
 
