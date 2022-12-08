@@ -1,6 +1,8 @@
 # ddev-typo3-mix-svelte demo
 
-Demo repo for Svelte usage in typo3 with help of ...
+LaravelMix + Svelte + typo3 🧡
+
+Demo repo for Svelte usage in typo3 v11.5 with help of ...
 
 - [DDEV](https://github.com/drud/ddev)
 - [ddev-browsersync](https://github.com/drud/ddev-browsersync)
@@ -53,6 +55,7 @@ Demo password: `password`
 - `ddev npm install --save svelte-confetti`
 
 - Created extension `svelte-demo` for typo3
+- Added root site, added template for root site, include svelte-demo
 
 
 ## Feedback
