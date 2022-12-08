@@ -2,7 +2,7 @@
 
 LaravelMix + Svelte + typo3 🧡
 
-Created by [@bokunomaxi](https://github.com/bokunomaxi) and [@mandrasch](https://github.com/mandrasch).
+Created by [@bokunomaxi](https://github.com/bokunomaxi) and [@mandrasch](https://github.com/mandrasch). Heavily inspired by awesome work of [@fgeierst](https://github.com/fgeierst?tab=repositories).
 
 Status: Work in Progress. 🧑‍🔧
 
@@ -14,8 +14,6 @@ Demo repo for Svelte usage in typo3 v11.5 with help of ...
 - [ddev-browsersync](https://github.com/drud/ddev-browsersync)
 - [LaravelMix](https://laravel-mix.com/)
 - [laravel-mix-svelte](https://laravel-mix.com/extensions/svelte)
-
-Heavily inspired by awesome work of [@fgeierst](https://github.com/fgeierst?tab=repositories).
 
 ## Local development (dev)
 
