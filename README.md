@@ -15,12 +15,28 @@ Heavily inspired by work of [@fgeierst](https://github.com/fgeierst?tab=reposito
 
 Created by [@bokunomaxi](https://github.com/bokunomaxi) and [@mandrasch](https://github.com/mandrasch).
 
-## Local development
+## Local development (dev)
 
 - `ddev npm run dev` (watches for changes)
 - `ddev launch`
 
 You should see `BrowserSync connected` in the upper right corner while developing.
+
+## Simulate production site (live) locally
+
+Run a vite build for production:
+
+```bash
+ddev npm run build
+```
+
+Switch applicationContext to production in `.env`:
+
+```bash
+# Switch easily between Development/Local and Production/Live
+# TYPO3_CONTEXT="Development/Local"
+TYPO3_CONTEXT="Production/Live"
+```
 
 ## Local (first time) setup after git clone:
 
