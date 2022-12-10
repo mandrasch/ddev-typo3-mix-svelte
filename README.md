@@ -15,6 +15,24 @@ Demo repo for Svelte usage in typo3 v11.5 with help of ...
 - [LaravelMix](https://laravel-mix.com/)
 - [laravel-mix-svelte](https://laravel-mix.com/extensions/svelte)
 
+## Local (first time) setup after git clone:
+
+This needs to be setup once:
+
+```bash
+ddev start && \
+  ddev composer install && \
+  ddev npm install && \
+  ddev exec 'cp .env.example .env' && \
+  ddev snapshot restore --latest && \
+  ddev launch
+```
+
+Login via https://ddev-typo3-mix-svelte.ddev.site/typo3 using these credentials:
+
+Demo user:  `admin`<br>
+Demo password:  `password`
+
 ## Local development (dev)
 
 - `ddev npm run dev` (watches for changes)
@@ -37,31 +55,6 @@ Switch applicationContext to production in `.env`:
 # TYPO3_CONTEXT="Development/Local"
 TYPO3_CONTEXT="Production/Live"
 ```
-
-## Local (first time) setup after git clone:
-
-This needs to be setup once:
-
-```
-ddev start
-
-# Install composer and NodeJS packages
-ddev composer install && ddev npm install
-
-# Setup .env file
-ddev exec 'cp .env.example .env' && \
-
-# Import database from demo db snapshot
-# (Otherwise you could use: 'ddev exec touch public/FIRST_INSTALL')
-ddev snapshot restore --latest
-
-ddev launch
-```
-
-Login via https://ddev-typo3-mix-svelte.ddev.site/typo3 using these credentials:
-
-Demo user:  `admin`<br>
-Demo password:  `password`
 
 ## How was this created?
 
